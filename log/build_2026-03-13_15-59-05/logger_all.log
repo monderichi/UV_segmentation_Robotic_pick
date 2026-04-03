@@ -1,0 +1,649 @@
+[0.202s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'spraying_pathways']
+[0.202s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['spraying_pathways'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7817e93b9060>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7817e93b8b20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7817e93b8b20>>)
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.394s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/media/monder/Files/robotics/project_phee/ros2_moveit_docker'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extensions ['ignore', 'ignore_ament_install']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'ignore'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'ignore_ament_install'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extensions ['colcon_pkg']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'colcon_pkg'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extensions ['colcon_meta']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'colcon_meta'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extensions ['ros']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'ros'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extensions ['cmake', 'python']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'cmake'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'python'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extensions ['python_setup_py']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(Dockerfile) by extension 'python_setup_py'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'ignore_ament_install'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extensions ['colcon_pkg']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'colcon_pkg'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extensions ['colcon_meta']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'colcon_meta'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extensions ['ros']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'ros'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extensions ['cmake', 'python']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'cmake'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'python'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extensions ['python_setup_py']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/Arduino) by extension 'python_setup_py'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'ignore'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'ignore_ament_install'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'colcon_meta'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extensions ['ros']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'ros'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extensions ['cmake', 'python']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'cmake'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'python'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extensions ['python_setup_py']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media) by extension 'python_setup_py'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'ros'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extensions ['cmake', 'python']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'cmake'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'python'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extensions ['python_setup_py']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder) by extension 'python_setup_py'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extensions ['ignore', 'ignore_ament_install']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'ignore'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'ignore_ament_install'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extensions ['colcon_pkg']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'colcon_pkg'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extensions ['colcon_meta']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'colcon_meta'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extensions ['ros']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'ros'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extensions ['cmake', 'python']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'cmake'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'python'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extensions ['python_setup_py']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files) by extension 'python_setup_py'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'ignore_ament_install'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'colcon_meta'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'ros'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extensions ['cmake', 'python']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'cmake'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'python'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extensions ['python_setup_py']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics) by extension 'python_setup_py'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extensions ['ignore', 'ignore_ament_install']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'ignore'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'colcon_pkg'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'ros'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extensions ['cmake', 'python']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'cmake'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'python'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extensions ['python_setup_py']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee) by extension 'python_setup_py'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extensions ['ignore', 'ignore_ament_install']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'ignore_ament_install'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'ros'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extensions ['cmake', 'python']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'cmake'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'python'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extensions ['python_setup_py']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker) by extension 'python_setup_py'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'ignore_ament_install'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extensions ['colcon_pkg']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'colcon_pkg'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extensions ['colcon_meta']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'colcon_meta'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extensions ['ros']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'ros'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extensions ['cmake', 'python']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'cmake'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'python'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extensions ['python_setup_py']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws) by extension 'python_setup_py'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'ignore'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'ignore_ament_install'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extensions ['colcon_pkg']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'colcon_pkg'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extensions ['colcon_meta']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'colcon_meta'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'ros'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extensions ['cmake', 'python']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'cmake'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'python'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extensions ['python_setup_py']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install) by extension 'python_setup_py'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'ros'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extensions ['cmake', 'python']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'cmake'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'python'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extensions ['python_setup_py']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description) by extension 'python_setup_py'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extensions ['colcon_pkg']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'colcon_pkg'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'ros'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extensions ['cmake', 'python']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'cmake'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'python'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extensions ['python_setup_py']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share) by extension 'python_setup_py'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'colcon_meta'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extensions ['ros']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'ros'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extensions ['cmake', 'python']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'cmake'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'python'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extensions ['python_setup_py']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description) by extension 'python_setup_py'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'colcon_meta'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extensions ['ros']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'ros'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extensions ['cmake', 'python']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'cmake'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'python'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extensions ['python_setup_py']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/cmake) by extension 'python_setup_py'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'ignore_ament_install'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extensions ['colcon_pkg']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'colcon_pkg'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'colcon_meta'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extensions ['ros']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'ros'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extensions ['cmake', 'python']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'cmake'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'python'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extensions ['python_setup_py']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/environment) by extension 'python_setup_py'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extensions ['ignore', 'ignore_ament_install']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'ignore_ament_install'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extensions ['colcon_pkg']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'colcon_pkg'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extensions ['colcon_meta']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'colcon_meta'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extensions ['ros']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'ros'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extensions ['cmake', 'python']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'cmake'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'python'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extensions ['python_setup_py']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/hook) by extension 'python_setup_py'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'ignore_ament_install'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extensions ['colcon_pkg']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'colcon_pkg'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extensions ['colcon_meta']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'ros'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extensions ['cmake', 'python']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'cmake'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'python'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extensions ['python_setup_py']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/launch) by extension 'python_setup_py'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'colcon_meta'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extensions ['ros']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'ros'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extensions ['cmake', 'python']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'cmake'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'python'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extensions ['python_setup_py']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes) by extension 'python_setup_py'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'ignore_ament_install'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extensions ['colcon_pkg']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'colcon_pkg'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extensions ['colcon_meta']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'colcon_meta'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extensions ['ros']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'ros'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extensions ['cmake', 'python']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'cmake'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'python'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extensions ['python_setup_py']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper) by extension 'python_setup_py'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'ignore'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'ignore_ament_install'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extensions ['colcon_pkg']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'colcon_pkg'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extensions ['colcon_meta']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'colcon_meta'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extensions ['ros']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'ros'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extensions ['cmake', 'python']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'cmake'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'python'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extensions ['python_setup_py']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/adaptive_gripper/visual) by extension 'python_setup_py'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'ignore_ament_install'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extensions ['colcon_pkg']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'colcon_pkg'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extensions ['colcon_meta']
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'colcon_meta'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extensions ['ros']
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'ros'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extensions ['cmake', 'python']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'cmake'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'python'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extensions ['python_setup_py']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435) by extension 'python_setup_py'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'ignore'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'ignore_ament_install'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extensions ['colcon_pkg']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'colcon_pkg'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extensions ['colcon_meta']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'colcon_meta'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extensions ['ros']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'ros'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extensions ['cmake', 'python']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'cmake'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'python'
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extensions ['python_setup_py']
+[0.520s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/d435/visual) by extension 'python_setup_py'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extensions ['ignore', 'ignore_ament_install']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'ignore'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'ignore_ament_install'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extensions ['colcon_pkg']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'colcon_pkg'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extensions ['colcon_meta']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'colcon_meta'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extensions ['ros']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'ros'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extensions ['cmake', 'python']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'cmake'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'python'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extensions ['python_setup_py']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0) by extension 'python_setup_py'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'ignore_ament_install'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extensions ['colcon_pkg']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'colcon_pkg'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extensions ['colcon_meta']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'colcon_meta'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extensions ['ros']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'ros'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extensions ['cmake', 'python']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'cmake'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'python'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extensions ['python_setup_py']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/g_shape_base_v2_0/visual) by extension 'python_setup_py'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extensions ['ignore', 'ignore_ament_install']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'ignore'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'ignore_ament_install'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extensions ['colcon_pkg']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'colcon_pkg'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extensions ['colcon_meta']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'colcon_meta'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extensions ['ros']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'ros'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extensions ['cmake', 'python']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'cmake'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'python'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extensions ['python_setup_py']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280) by extension 'python_setup_py'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'ignore'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'ignore_ament_install'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extensions ['colcon_pkg']
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'colcon_pkg'
+[0.539s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extensions ['colcon_meta']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'colcon_meta'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extensions ['ros']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'ros'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extensions ['cmake', 'python']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'cmake'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'python'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extensions ['python_setup_py']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_280/visual) by extension 'python_setup_py'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'ignore_ament_install'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extensions ['colcon_pkg']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'colcon_pkg'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extensions ['colcon_meta']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'colcon_meta'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extensions ['ros']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'ros'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extensions ['cmake', 'python']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'cmake'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'python'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extensions ['python_setup_py']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/meshes/mycobot_320) by extension 'python_setup_py'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extensions ['ignore', 'ignore_ament_install']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'ignore_ament_install'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extensions ['colcon_pkg']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'colcon_pkg'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extensions ['colcon_meta']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'colcon_meta'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extensions ['ros']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'ros'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extensions ['cmake', 'python']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'cmake'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'python'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extensions ['python_setup_py']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/rviz) by extension 'python_setup_py'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'ignore'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'ignore_ament_install'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extensions ['colcon_pkg']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'colcon_pkg'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extensions ['colcon_meta']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'colcon_meta'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extensions ['ros']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'ros'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extensions ['cmake', 'python']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'cmake'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'python'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extensions ['python_setup_py']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf) by extension 'python_setup_py'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'ignore_ament_install'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extensions ['colcon_pkg']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'colcon_pkg'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extensions ['colcon_meta']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'colcon_meta'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extensions ['ros']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'ros'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extensions ['cmake', 'python']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'cmake'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'python'
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extensions ['python_setup_py']
+[0.563s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/control) by extension 'python_setup_py'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extensions ['ignore', 'ignore_ament_install']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'ignore'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'ignore_ament_install'
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extensions ['colcon_pkg']
+[0.565s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'colcon_pkg'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extensions ['colcon_meta']
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'colcon_meta'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extensions ['ros']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'ros'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extensions ['cmake', 'python']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'cmake'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'python'
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extensions ['python_setup_py']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/mech) by extension 'python_setup_py'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'ignore_ament_install'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extensions ['colcon_pkg']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'colcon_pkg'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extensions ['colcon_meta']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'colcon_meta'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extensions ['ros']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'ros'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extensions ['cmake', 'python']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'cmake'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'python'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extensions ['python_setup_py']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/robots) by extension 'python_setup_py'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'ignore'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'ignore_ament_install'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extensions ['colcon_pkg']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'colcon_pkg'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extensions ['colcon_meta']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'colcon_meta'
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extensions ['ros']
+[0.577s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'ros'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extensions ['cmake', 'python']
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'cmake'
+[0.578s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'python'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extensions ['python_setup_py']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/install/mycobot_description/share/mycobot_description/urdf/sensors) by extension 'python_setup_py'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extension 'ignore'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extension 'ignore_ament_install'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extensions ['colcon_pkg']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extension 'colcon_pkg'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extensions ['colcon_meta']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extension 'colcon_meta'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extensions ['ros']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/mycobot_description) by extension 'ros'
+[0.589s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/mycobot_description' with type 'ros.ament_cmake' and name 'mycobot_description'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extensions ['ignore', 'ignore_ament_install']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'ignore'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'ignore_ament_install'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extensions ['colcon_pkg']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'colcon_pkg'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extensions ['colcon_meta']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'colcon_meta'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extensions ['ros']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'ros'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extensions ['cmake', 'python']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'cmake'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'python'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extensions ['python_setup_py']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety) by extension 'python_setup_py'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'ignore'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'ignore_ament_install'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extensions ['colcon_pkg']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'colcon_pkg'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extensions ['colcon_meta']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'colcon_meta'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extensions ['ros']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'ros'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extensions ['cmake', 'python']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'cmake'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'python'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extensions ['python_setup_py']
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/rapseb_hri_safety/launch) by extension 'python_setup_py'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extensions ['ignore', 'ignore_ament_install']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extension 'ignore'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extension 'ignore_ament_install'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extensions ['colcon_pkg']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extension 'colcon_pkg'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extensions ['colcon_meta']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extension 'colcon_meta'
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extensions ['ros']
+[0.593s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/spraying_pathways) by extension 'ros'
+[0.596s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/spraying_pathways' with type 'ros.ament_cmake' and name 'spraying_pathways'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extension 'ignore'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extension 'ignore_ament_install'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extensions ['colcon_pkg']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extension 'colcon_pkg'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extensions ['colcon_meta']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extension 'colcon_meta'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extensions ['ros']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/ur_simulation_gazebo) by extension 'ros'
+[0.598s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/ur_simulation_gazebo' with type 'ros.ament_cmake' and name 'ur_simulation_gazebo'
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.615s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mycobot_description' in 'ros2_ws/src/mycobot_description'
+[0.615s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ur_simulation_gazebo' in 'ros2_ws/src/ur_simulation_gazebo'
+[0.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.616s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.617s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'cmake_args' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'cmake_target' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'cmake_clean_cache' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'cmake_clean_first' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'cmake_force_configure' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'ament_cmake_args' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'catkin_cmake_args' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'spraying_pathways' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.619s] DEBUG:colcon.colcon_core.verb:Building package 'spraying_pathways' with the following arguments: {'ament_cmake_args': None, 'build_base': '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/build/spraying_pathways', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways', 'merge_install': False, 'path': '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/src/spraying_pathways', 'symlink_install': False, 'test_result_base': None}
+[0.619s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.620s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.623s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/src/spraying_pathways' with build type 'ament_cmake'
+[0.623s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/src/spraying_pathways'
+[0.625s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.625s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.625s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/build/spraying_pathways': /usr/bin/cmake /media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/src/spraying_pathways -DCMAKE_INSTALL_PREFIX=/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways
+[1.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/build/spraying_pathways' returned '1': /usr/bin/cmake /media/monder/Files/robotics/project_phee/ros2_moveit_docker/ros2_ws/src/spraying_pathways -DCMAKE_INSTALL_PREFIX=/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways
+[1.471s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spraying_pathways)
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways' for CMake module files
+[1.478s] Level 1:colcon.colcon_core.environment:checking '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways' for CMake config files
+[1.479s] Level 1:colcon.colcon_core.environment:checking '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/bin'
+[1.479s] Level 1:colcon.colcon_core.environment:checking '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/lib/pkgconfig/spraying_pathways.pc'
+[1.481s] Level 1:colcon.colcon_core.environment:checking '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/lib/python3.10/site-packages'
+[1.482s] Level 1:colcon.colcon_core.environment:checking '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/bin'
+[1.482s] INFO:colcon.colcon_core.shell:Creating package script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/share/spraying_pathways/package.ps1'
+[1.483s] INFO:colcon.colcon_core.shell:Creating package descriptor '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/share/spraying_pathways/package.dsv'
+[1.485s] INFO:colcon.colcon_core.shell:Creating package script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/share/spraying_pathways/package.sh'
+[1.487s] INFO:colcon.colcon_core.shell:Creating package script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/share/spraying_pathways/package.bash'
+[1.489s] INFO:colcon.colcon_core.shell:Creating package script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/share/spraying_pathways/package.zsh'
+[1.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/spraying_pathways/share/colcon-core/packages/spraying_pathways)
+[1.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[1.502s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.507s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.519s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.519s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/local_setup.ps1'
+[1.521s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/_local_setup_util_ps1.py'
+[1.524s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/setup.ps1'
+[1.527s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/local_setup.sh'
+[1.528s] INFO:colcon.colcon_core.shell:Creating prefix util module '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/_local_setup_util_sh.py'
+[1.530s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/setup.sh'
+[1.532s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/local_setup.bash'
+[1.533s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/setup.bash'
+[1.534s] INFO:colcon.colcon_core.shell:Creating prefix script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/local_setup.zsh'
+[1.535s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/media/monder/Files/robotics/project_phee/ros2_moveit_docker/install/setup.zsh'

@@ -57,11 +57,11 @@
       </collision>
     </link>
 
-    <!-- Joint from robot to soft tip -->
+    <!-- Joint from robot flange to soft tip -->
+    <!-- Connects to flange instead of wrist_3_link to avoid duplicate tool0 -->
     <joint name="${prefix}ee_mount" type="fixed">
       <parent link="${parent_link}"/>
       <child link="${prefix}soft_tip"/>
-      <!-- Adjust this offset to position your EE correctly -->
       <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
 
@@ -72,13 +72,12 @@
       <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
 
-    <!-- TOOL FRAME - Required for MoveIt! -->
-    <!-- Position this at the tip of your end effector -->
-    <link name="${prefix}tool0"/>
-    <joint name="${prefix}tool0_joint" type="fixed">
+    <!-- TOOL FRAME - Connect existing tool0 to end of EE -->
+    <!-- The tool0 link is already defined in main xacro, we just connect it to our EE -->
+    <joint name="${prefix}ee_body-tool0" type="fixed">
       <parent link="${prefix}ee_body"/>
       <child link="${prefix}tool0"/>
-      <!-- Adjust based on your EE geometry - currently at body center -->
+      <!-- Position at tip of end effector - ADJUST THIS VALUE -->
       <origin xyz="0 0 0.06" rpy="0 0 0"/>
     </joint>
 
