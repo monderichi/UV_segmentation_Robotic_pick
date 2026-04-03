@@ -57,6 +57,7 @@
     <xacro:arg name="prefix" default=""/>
     <xacro:arg name="use_gazebo" default="false"/>
     <xacro:arg name="use_gripper" default="false"/>
+    <xacro:arg name="use_soft_ee" default="true"/>
     <xacro:arg name="controllers_file" default="none"/>
 
     <!-- World link -->
@@ -282,6 +283,14 @@
       robot_name="$(arg robot_name)"
       use_gazebo="$(arg use_gazebo)"
       controllers_file="$(arg controllers_file)"/>
+
+    <!-- Include Soft End Effector -->
+    <xacro:include filename="$(find mycobot_description)/urdf/mech/soft_end_effector.urdf.xacro"/>
+
+    <!-- Conditionally add soft end effector -->
+    <xacro:if value="$(arg use_soft_ee)">
+      <xacro:soft_end_effector parent_link="$(arg prefix)wrist_3_link" prefix="$(arg prefix)"/>
+    </xacro:if>
 
     <!-- UR-compatible ROS2 Control Configuration -->
     <xacro:include filename="$(find mycobot_description)/urdf/control/mycobot_320_ur_ros2_control.urdf.xacro"/>
